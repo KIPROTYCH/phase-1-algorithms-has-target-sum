@@ -33,6 +33,22 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  function hasTargetSum(array, target):
+  Sort the array in ascending order
+  Initialize left pointer to 0
+  Initialize right pointer to array.length - 1
+
+  while left < right:
+    Calculate the sum of array[left] and array[right]
+
+    if the sum is equal to  target:
+      Return true
+    else if the sum is less than target:
+      Move the left pointer to the right
+    else:
+      Move the right pointer to the left
+
+  Return false
 */
 
 /*
