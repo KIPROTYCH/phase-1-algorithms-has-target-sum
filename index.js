@@ -1,6 +1,31 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  // Sort the array in ascending order
+  array.sort((a,b) => a - b);
+
+  //sue two pointers, left at the index 0 (start) and right at the end of array.
+  let left = 0;
+  let right = array.length - 1;
+
+  // Iterate until the pointers meet at the center
+  while (left < right) {
+    const sum = array[left] + array[right];
+    if (sum === target) {
+      return true;
+
+    } else if (sum === target) {
+      return true ;
+
+    } else if (sum < target) {
+      left++;
+    } else {
+      right--;
+    }
+
+  }
+  return false;
 }
+
 
 /* 
   Write the Big O time complexity of your function here
